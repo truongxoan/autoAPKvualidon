@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/card_bg"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvDialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚙️ Tùy Chỉnh &amp; Thêm Phím Mới"
+            android:textColor="@color/primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Key Label Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên hiển thị trên nút:"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etKeyLabel"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/card_neon_border"
+            android:backgroundTint="@color/surface_dark"
+            android:paddingHorizontal="12dp"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:hint="Ví dụ: R, Space, Bắn, Cứu thương..."
+            android:textColorHint="@color/text_hint"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Key Type RadioGroup -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại Phím / Chức năng:"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp" />
+
+        <RadioGroup
+            android:id="@+id/rgKeyType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <RadioButton
+                android:id="@+id/rbSingleKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⌨️ Phím Bàn Phím (Gõ phím bất kỳ để gán)"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbWasd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🕹️ Cần Di Chuyển WASD (Joystick 8 hướng)"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rbFire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔥 Nút Bắn (Chuột Trái / Left Click)"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rbAim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎯 Nút Ngắm (Chuột Phải / Right Click)"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rbFpsCamera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="👀 Vùng Xoay Góc Nhìn (Mouse Look Camera)"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rbScrollUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="▲ Lăn Chuột Lên (Scroll UP)"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rbScrollDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="▼ Lăn Chuột Xuống (Scroll DOWN)"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rbScrollMiddle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="● Click Con Lăn (Middle Click)"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rbMacroTrigger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔁 Nút Chạy Macro (Bấm nút trên màn hình hoặc gán phím để chạy)"
+                android:textColor="@color/accent_purple"
+                android:textSize="13sp" />
+        </RadioGroup>
+
+        <!-- Key Press Prompt -->
+        <TextView
+            android:id="@+id/tvPressKeyPrompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/surface_dark"
+            android:padding="12dp"
+            android:text="👉 Bấm một phím bất kỳ trên bàn phím để gán..."
+            android:textColor="@color/accent_green"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Continuous Hold Checkbox -->
+        <CheckBox
+            android:id="@+id/cbContinuous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chế độ nhấn giữ liên tục (Hold to press)"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btnDeleteKey"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Xóa Nút"
+                android:textColor="@color/secondary"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginEnd="10dp" />
+
+            <Button
+                android:id="@+id/btnConfirmKey"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Lưu Phím"
+                android:textColor="@color/background_dark"
+                android:background="@drawable/btn_neon_primary"
+                app:backgroundTint="@null"
+                android:paddingHorizontal="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="4dp">
+
+    <!-- Floating Bubble / Ball -->
+    <ImageButton
+        android:id="@+id/btnFloatingBall"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:background="@drawable/floating_btn_bg"
+        android:src="@drawable/ic_launcher_foreground"
+        android:scaleType="fitCenter"
+        android:padding="8dp"
+        android:contentDescription="Menu Keymapper" />
+
+    <!-- Expanded Floating Quick Menu -->
+    <LinearLayout
+        android:id="@+id/layoutExpandedMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/card_neon_border"
+        android:padding="6dp"
+        android:layout_marginStart="8dp"
+        android:visibility="gone">
+
+        <!-- Mode Toggle: Edit Keymap vs Gaming / Pointer Capture -->
+        <Button
+            android:id="@+id/btnToggleMode"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="Chỉnh Phím"
+            android:textColor="@color/background_dark"
+            android:textSize="12sp"
+            android:background="@drawable/btn_neon_primary"
+            app:backgroundTint="@null"
+            android:paddingHorizontal="10dp"
+            android:layout_marginEnd="6dp" />
+
+        <!-- Add Button (WASD / Key / Fire / Aim) -->
+        <Button
+            android:id="@+id/btnAddKey"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="+ Thêm Phím"
+            android:textColor="@color/text_primary"
+            android:textSize="12sp"
+            android:background="@drawable/card_neon_border"
+            app:backgroundTint="@color/surface_dark"
+            android:paddingHorizontal="8dp"
+            android:layout_marginEnd="4dp" />
+
+        <!-- Macro Record & Loop Play -->
+        <Button
+            android:id="@+id/btnMacro"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="⏺ Record"
+            android:textColor="@color/accent_orange"
+            android:textSize="12sp"
+            android:background="@drawable/card_neon_border"
+            app:backgroundTint="@color/surface_dark"
+            android:paddingHorizontal="8dp"
+            android:layout_marginEnd="4dp" />
+
+        <!-- Stealth / Ghost Mode -->
+        <Button
+            android:id="@+id/btnStealth"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="👻 Ẩn (F4)"
+            android:textColor="@color/accent_purple"
+            android:textSize="12sp"
+            android:background="@drawable/card_neon_border"
+            app:backgroundTint="@color/surface_dark"
+            android:paddingHorizontal="8dp"
+            android:layout_marginEnd="4dp" />
+
+        <!-- Save Profile -->
+        <Button
+            android:id="@+id/btnSaveMap"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="Lưu"
+            android:textColor="@color/accent_green"
+            android:textSize="12sp"
+            android:background="@drawable/card_neon_border"
+            app:backgroundTint="@color/surface_dark"
+            android:paddingHorizontal="8dp"
+            android:layout_marginEnd="4dp" />
+
+        <!-- Close / Hide Menu -->
+        <Button
+            android:id="@+id/btnCloseFloating"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="✕"
+            android:textColor="@color/secondary"
+            android:textSize="12sp"
+            android:background="@drawable/card_neon_border"
+            app:backgroundTint="@color/surface_dark"
+            android:paddingHorizontal="8dp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/card_bg"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kích Hoạt ADB Daemon (Zero Detection)"
+        android:textColor="@color/primary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Để game KHÔNG phát hiện và đạt độ trễ 0ms (như Mantis Mouse Pro), ứng dụng sử dụng Server chạy quyền shell ADB để inject cảm ứng tầng Kernel mà không can thiệp vào game.\n\nCách 1: Dùng Máy Tính (PC)\n1. Bật 'Tùy chọn nhà phát triển' &amp; 'Gỡ lỗi USB' trên điện thoại.\n2. Cắm cáp kết nối vào máy tính.\n3. Chạy file 'activate.bat' trong thư mục ứng dụng.\n\nCách 2: Kích hoạt trực tiếp qua Shizuku (Không cần PC)\n1. Cài đặt app Shizuku từ Google Play.\n2. Bật Wireless Debugging (Gỡ lỗi Wi-Fi) và bấm Ghép nối trong Shizuku.\n3. Cấp quyền cho AntiGravity Keymapper."
+        android:textColor="@color/text_secondary"
+        android:textSize="13sp"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lệnh ADB Chạy Thủ Công (Nếu cần):"
+        android:textColor="@color/text_primary"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvAdbCommand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface_dark"
+        android:padding="10dp"
+        android:text="adb shell sh /data/local/tmp/antigravity_activate.sh"
+        android:textColor="@color/accent_green"
+        android:textSize="12sp"
+        android:fontFamily="monospace"
+        android:textIsSelectable="true"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnCloseGuide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đã Hiểu"
+        android:textColor="@color/background_dark"
+        android:background="@drawable/btn_neon_primary"
+        android:backgroundTint="@null" />
+</LinearLayout>

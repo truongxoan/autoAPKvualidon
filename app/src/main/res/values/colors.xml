@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cyberpunk / Neon Gaming Palette -->
+    <color name="primary">#00E5FF</color>
+    <color name="primary_variant">#00B0FF</color>
+    <color name="secondary">#FF0055</color>
+    <color name="secondary_variant">#D50000</color>
+    
+    <color name="background_dark">#0D1117</color>
+    <color name="card_bg">#161B22</color>
+    <color name="card_border">#30363D</color>
+    <color name="surface_dark">#1F242C</color>
+    
+    <color name="accent_green">#00E676</color>
+    <color name="accent_orange">#FF9100</color>
+    <color name="accent_purple">#D500F9</color>
+    <color name="accent_yellow">#FFD600</color>
+
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#8B949E</color>
+    <color name="text_hint">#484F58</color>
+    
+    <!-- Overlay & Key Button Colors -->
+    <color name="overlay_button_bg">#CC161B22</color>
+    <color name="overlay_button_stroke">#00E5FF</color>
+    <color name="overlay_wasd_bg">#880D1117</color>
+    <color name="overlay_wasd_stroke">#FF0055</color>
+    <color name="overlay_active">#00E676</color>
+</resources>

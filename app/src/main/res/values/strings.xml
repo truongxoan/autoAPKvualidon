@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Tx</string>
+    <string name="app_tagline">Keymapper Chuột &amp; Bàn Phím Tối Thượng (Anti-Ban / Zero Detection)</string>
+    <string name="accessibility_description">Ứng dụng Tx hỗ trợ mô phỏng cảm ứng màn hình cho chuột, bàn phím và macro.</string>
+    
+    <!-- Onboarding Permissions -->
+    <string name="permission_title">Cấp Quyền Cần Thiết Cho Ứng Dụng Tx</string>
+    <string name="permission_desc">Để ứng dụng hoạt động đầy đủ tính năng và không bị gián đoạn, vui lòng cấp các quyền bên dưới:</string>
+    <string name="perm_overlay_title">1. Quyền Cửa Sổ Nổi (Overlay)</string>
+    <string name="perm_overlay_desc">Cần thiết để hiển thị nút ảo và bảng điều khiển nổi trên màn hình game.</string>
+    <string name="perm_accessibility_title">2. Dịch Vụ Trợ Năng (Accessibility)</string>
+    <string name="perm_accessibility_desc">Dùng để mô phỏng cảm ứng màn hình mượt mà (chế độ không cần PC).</string>
+    <string name="perm_notification_title">3. Quyền Thông Báo (Notification)</string>
+    <string name="perm_notification_desc">Giúp ứng dụng duy trì chạy nền ổn định khi đang trong trận đấu.</string>
+    <string name="btn_grant">Cấp Quyền</string>
+    <string name="btn_granted">Đã Cấp ✓</string>
+    
+    <!-- Dashboard Strings -->
+    <string name="status_title">Trạng Thái Kết Nối &amp; Quyền Hệ Thống</string>
+    <string name="adb_status_active">ADB Daemon: Đã Kích Hoạt (0-Latency / Safe Mode)</string>
+    <string name="adb_status_inactive">ADB Daemon: Chưa Kích Hoạt (Nhấn để xem hướng dẫn)</string>
+    <string name="overlay_permission">Cửa Sổ Nổi (Bắt buộc)</string>
+    <string name="accessibility_permission">Dịch Vụ Trợ Năng (Chạm cảm ứng)</string>
+    <string name="btn_start_service">Khởi Chạy Tx Keymapper</string>
+    <string name="btn_stop_service">Dừng Keymapper</string>
+    <string name="btn_activate_guide">Hướng Dẫn Kích Hoạt ADB / Shizuku</string>
+    
+    <!-- Profiles -->
+    <string name="profile_title">Hồ Sơ Gán Phím (Profiles)</string>
+    <string name="profile_fps_default">Game Bắn Súng (FPS - PUBG, FreeFire, COD)</string>
+    <string name="profile_moba_default">Game MOBA (Liên Quân, Wild Rift)</string>
+    <string name="profile_custom">Tùy Chỉnh Cá Nhân</string>
+    
+    <!-- Sensitivity -->
+    <string name="sensitivity_title">Cài Đặt Độ Nhạy Chuột (FPS Aim)</string>
+    <string name="sens_x">Độ nhạy ngang (X): %1$d%%</string>
+    <string name="sens_y">Độ nhạy dọc (Y): %1$d%%</string>
+</resources>
